@@ -1,0 +1,14 @@
+/node_modules/
+/dist/
+/docs/
+/coverage/
+*/.next/
+*/dist/
+*/node_modules/
+/packages/*/dist/
+/packages/*/node_modules/
+/packages/*/cjs/
+/packages/*/es/
+/packages/*/babel-helpers/
+/projects/*/dist/
+/projects/*/node_modules/

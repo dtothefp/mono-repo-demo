@@ -1,0 +1,85 @@
+@import 'config/common.css';
+@import 'config/header.css';
+
+:root {
+  --custom-easing: cubic-bezier(0.33, 0, 0.25, 1);
+}
+
+.fade-up-test {
+  @media (--large-up) {
+    opacity: 0;
+    transform: translateY(var(--size-7));
+    transition: opacity 0.5s var(--custom-easing), transform 0.5s var(--custom-easing);
+
+    &.is-animated {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.container {
+  position: fixed;
+  top: var(--header-height-mobile);
+  right: 0;
+  left: 0;
+  z-index: var(--z-index-subnav);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  @media (--small-up) and (--medium-down) {
+    text-align: center;
+  }
+
+  @media (--large-up) {
+    top: var(--header-height);
+  }
+}
+
+.heading-child {
+  composes: margin-auto from 'helpers/layout.css';
+  composes: heading-1 from 'helpers/typography.css';
+}
+
+.buy-button {
+  composes: button--primary from 'helpers/buttons.css';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 0.625rem;
+  border-radius: 0;
+  transition: var(--transition-transform);
+
+  @media (--mobile-down) {
+    padding: var(--size-4);
+    font-size: var(--font-1);
+  }
+
+  @media (--medium-down) {
+    width: var(--subnav-buy-width-mobile);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -2.5rem;
+      width: 2.5rem;
+      height: var(--subnav-height);
+      background: linear-gradient(to right, rgba(246, 246, 246, 0), rgba(246, 246, 246, 0.75) 50%, var(--color-background-light));
+      pointer-events: none;
+    }
+  }
+
+  @media (--large-up) {
+    width: var(--subnav-buy-width);
+  }
+}
+
+.bg {
+  top: -var(--header-height-mobile);
+  display: flex;
+  background: blue;
+  transition: var(--transition-transform);
+}

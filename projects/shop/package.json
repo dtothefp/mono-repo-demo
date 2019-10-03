@@ -1,0 +1,45 @@
+{
+  "name": "shop",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development luna --webpack=happy,ssr,styled --extract --contentful-api=preview --template=contentful",
+    "prod": "NODE_ENV=production luna --webpack=happy --extract --template=contentful"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "author": "Casper",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://www.casper.com",
+  "devDependencies": {
+    "@luna/build": "13.36.0",
+    "@luna/eslint-config": "^13.35.0",
+    "@luna/stylelint-config": "^13.35.0",
+    "@siesta/network": "^8.9.0",
+    "stylelint": "^11.0.0"
+  },
+  "dependencies": {
+    "@siesta/components": "^7.0.0",
+    "@siesta/css": "^7.0.0",
+    "@siesta/modules": "^7.0.0",
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.11",
+    "lodash-es": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-loadable": "^5.4.0",
+    "react-redux": "^5.0.2",
+    "react-router": "^4.2.0",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "5.0.0-alpha.9",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.14.3",
+    "styled-components": "^4.3.1"
+  },
+  "browserslist": {
+    "production": "extends @luna/browserslist-config/legacy"
+  }
+}

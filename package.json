@@ -1,0 +1,19 @@
+{
+  "name": "mono-repo-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "{packages,projects}/**"
+  ],
+  "private": true,
+  "scripts": {
+    "lerna": "lerna",
+    "shop:dev": "yarn workspace shop dev",
+    "style-guide:dev": "yarn workspace style-guide dev",
+    "storybook:dev": "yarn workspace storybook storybook"
+  },
+  "dependencies": {
+    "lerna": "^3.16.4"
+  }
+}

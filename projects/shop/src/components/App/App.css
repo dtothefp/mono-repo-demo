@@ -1,0 +1,30 @@
+@import 'config/common.css';
+@import 'config/header.css';
+
+.container {
+  composes: page-section from 'helpers/layout.css';
+  text-align: center;
+  color: var(--color-primary);
+  background-color: var(--color-background-light);
+}
+
+.heading-app {
+  composes: margin-auto from 'helpers/layout.css';
+  composes: heading-1 from 'helpers/typography.css';
+}
+
+.spacing {
+  display: block;
+}
+
+.mattresses {
+  color: red;
+}
+
+.pillows {
+  color: blue;
+}
+
+.sheets {
+  color: green;
+}

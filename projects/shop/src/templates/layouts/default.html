@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html" charset="UTF-8" http-equiv="Content-Type">
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    {% meta %}
+    <link rel="icon" type="image/x-icon" href="https://casper-images.s3.amazonaws.com/assets/favicon.ico">
+
+    {% title %}
+    {% load_fonts %}
+
+    {% get_asset type="css" %}
+  </head>
+  <body>
+    {% block main %}{% endblock %}
+    {% redux_store %}
+    {% get_asset type="js" %}
+  </body>
+</html>
