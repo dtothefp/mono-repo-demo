@@ -1,10 +1,9 @@
 {
   "name": "storybook",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@storybook/addon-actions": "^5.2.1",
