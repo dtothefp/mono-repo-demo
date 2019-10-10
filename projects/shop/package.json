@@ -1,6 +1,6 @@
 {
   "name": "shop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=development luna --webpack=happy,ssr,styled --extract --contentful-api=preview --template=contentful",
