@@ -1,5 +1,5 @@
 {
-  "name": "@shop-shared/package-a",
+  "name": "@demo-shop-shared/package-a",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT"

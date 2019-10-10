@@ -1,9 +1,9 @@
 {
-  "name": "@shop-shared/package-b",
+  "name": "@demo-shop-shared/package-b",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@shop-shared/package-a": "0.0.0"
+    "@demo-shop-shared/package-a": "0.0.0"
   }
 }
